@@ -5,125 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCM Moto Clube - Em Construção</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Container do vídeo de fundo */
-        .video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .video-background video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-        }
-
-        /* Conteúdo sobre o vídeo */
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-        }
-
-        .content h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        .content p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        .content .btn {
-            padding: 15px 30px;
-            background-color: #f9a825;
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .content .btn:hover {
-            background-color: #fff;
-        }
-
-        /* Estilo do rodapé */
-        footer {
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            color: #fff;
-            font-size: 14px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .content h1 {
-                font-size: 36px;
-            }
-
-            .content p {
-                font-size: 16px;
-            }
-
-            .content .btn {
-                padding: 10px 20px;
-            }
-        }
-    </style>
 </head>
 <body>
-
-    <!-- Vídeo de fundo -->
-    <div class="video-background">
-        <video autoplay muted loop>
-            <source src="https://www.youtube.com/embed/FCpTruKuR9w"
-        </video>
+    <div class="construction-container">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Site em Construção</h1>
+            <p>Estamos trabalhando para lançar o site oficial do PCM Moto Clube.</p>
+            <p>Fique atento para as novidades!</p>
+            <a href="mailto:contato@pcmmotoclube.com.br" class="btn">Entre em contato</a>
+        </div>
     </div>
-
-    <!-- Conteúdo da página -->
-    <div class="content">
-        <h1>PCM Moto Clube</h1>
-        <p>Estamos trabalhando em algo incrível! Volte em breve.</p>
-        <a href="mailto:contato@pcmmotoclube.com" class="btn">Entre em Contato</a>
-    </div>
-
-    <!-- Rodapé -->
-    <footer>
-        &copy; 2024 PCM Moto Clube. Todos os direitos reservados.
-    </footer>
-
 </body>
 </html>
