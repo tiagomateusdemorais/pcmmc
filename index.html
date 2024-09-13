@@ -1,61 +1,132 @@
 <!DOCTYPE html>
-<html lang="en" class="demo-4">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Site em Construção</title>
-		<meta name="description" content="use para seus sites em construção" />
-		<meta name="keywords" content="css-only, preloader, animations, css, css3, creative, custom, howto," />
-		<meta name="author" content="Mateus P. Ortiz - mateusortiz.com.br" />
-		<link rel="shortcut icon" href="../favicon.ico"> 
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script src="js/modernizr.custom.63321.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/demo2.css" />
-        <link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
-		<!--[if lte IE 9]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
-	</head>
-	<body>
-		<div class="container">
-		
-			<!-- Codrops top bar -->
-			
-			<header>
-				<h1>Estamos em <strong>Construção</strong></h1>
-				<h2>Logo teremos um site novo e muito mais legal para Você Cliente !</h2>
-				<h1>Logo estaremos pronto para lhe atender!!</h1>
-				<h4>Heey aguardei ai logo teremos novidades!</h4>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPCMMC - Portal do Cérebro Mortal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #f00;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #f00;
+        }
+        .container {
+            padding: 20px;
+        }
+        .video, .fotos, .eventos, .produtos {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .produto {
+            border: 1px solid #444;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .produto img {
+            width: 100%;
+            height: auto;
+        }
+        .comprar-btn {
+            display: inline-block;
+            background-color: #f00;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .comprar-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
 
-				<div class="support-note">
-					<span class="note-ie">Sorry, only modern browsers.</span>
-				</div>
-				
-			</header>
-			
-			<section class="main">
-				<!-- the component -->
-				<div class="wrapper">
-					<div class="inner">
-						<span>L</span>
-						<span>o</span>
-						<span>a</span>
-						<span>d</span>
-						<span>i</span>
-						<span>n</span>
-						<span>g</span>
-					</div>
-				</div>
-			</section>
-			<ul class="tt-wrapper">
-				<li><a class="tt-gplus" href="#"><span>Google Plus</span></a></li>
-				<li><a class="tt-twitter" href="#"><span>Twitter</span></a></li>
-				<li><a class="tt-dribbble" href="#"><span>Dribbble</span></a></li>
-				<li><a class="tt-facebook" href="#"><span>Facebook</span></a></li>
-				<li><a class="tt-linkedin" href="#"><span>LinkedIn</span></a></li>
-				<li><a class="tt-forrst" href="#"><span>Forrst</span></a></li>
-			</ul>
-		</div>
-	</body>
+<header>
+    <h1>PPCMMC - Portal do Cérebro Mortal</h1>
+</header>
+
+<nav>
+    <a href="#videos">Vídeos</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#loja">Loja</a>
+</nav>
+
+<div class="container">
+    <section id="videos" class="video">
+        <h2>Últimos Vídeos</h2>
+        <video controls width="100%">
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta a exibição de vídeos.
+        </video>
+    </section>
+
+    <section id="fotos" class="fotos">
+        <h2>Galeria de Fotos</h2>
+        <img src="foto1.jpg" alt="Foto 1" width="100%">
+        <img src="foto2.jpg" alt="Foto 2" width="100%">
+    </section>
+
+    <section id="eventos" class="eventos">
+        <h2>Próximos Eventos</h2>
+        <ul>
+            <li>Evento 1 - 12 de Setembro, 2024</li>
+            <li>Evento 2 - 25 de Outubro, 2024</li>
+            <li>Evento 3 - 8 de Novembro, 2024</li>
+        </ul>
+    </section>
+
+    <section id="loja" class="produtos">
+        <h2>Loja PPCMMC</h2>
+
+        <div class="produto">
+            <h3>Camisa PPCMMC</h3>
+            <img src="camisa.jpg" alt="Camisa PPCMMC">
+            <p>Preço: R$ 50,00</p>
+            <a href="https://wa.me/seunumero?text=Quero%20comprar%20a%20Camisa%20PPCMMC" class="comprar-btn">Comprar via WhatsApp</a>
+        </div>
+
+        <div class="produto">
+            <h3>Boné PPCMMC</h3>
+            <img src="bone.jpg" alt="Boné PPCMMC">
+            <p>Preço: R$ 30,00</p>
+            <a href="https://wa.me/seunumero?text=Quero%20comprar%20o%20Boné%20PPCMMC" class="comprar-btn">Comprar via WhatsApp</a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 PPCMMC - Portal do Cérebro Mortal</p>
+</footer>
+
+</body>
 </html>
