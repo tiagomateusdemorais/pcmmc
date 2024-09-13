@@ -1,0 +1,129 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #e63946;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+/* Seção de Vídeos */
+#videos iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    margin: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Seção de Fotos */
+#fotos .foto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+#fotos img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#fotos img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Eventos */
+#eventos {
+    text-align: center;
+    padding: 30px;
+}
+
+#eventos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#eventos li {
+    margin: 10px 0;
+}
+
+/* Seção de E-commerce */
+#loja .produto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+#loja .produto {
+    text-align: center;
+}
+
+#loja .produto img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+#loja .botao-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#loja .botao-whatsapp:hover {
+    background-color: #128c7e;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
