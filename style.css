@@ -12,6 +12,7 @@ body, html {
 
 .construction-container {
     position: relative;
+    padding: 15px;
     width: 100%;
     height: 100vh;
     overflow: hidden;
