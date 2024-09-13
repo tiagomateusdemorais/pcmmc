@@ -3,130 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPCMMC - Portal do Cérebro Mortal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #222;
-            color: #fff;
-        }
-        header {
-            background-color: #000;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            color: #f00;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #f00;
-        }
-        .container {
-            padding: 20px;
-        }
-        .video, .fotos, .eventos, .produtos {
-            margin-bottom: 40px;
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-        .produto {
-            border: 1px solid #444;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .produto img {
-            width: 100%;
-            height: auto;
-        }
-        .comprar-btn {
-            display: inline-block;
-            background-color: #f00;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-        .comprar-btn:hover {
-            background-color: #444;
-        }
-    </style>
+    <title>PPCMMC Portal do Cérebro Mortal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
-<header>
-    <h1>PPCMMC - Portal do Cérebro Mortal</h1>
-</header>
-
-<nav>
-    <a href="#videos">Vídeos</a>
-    <a href="#fotos">Fotos</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#loja">Loja</a>
-</nav>
-
-<div class="container">
-    <section id="videos" class="video">
-        <h2>Últimos Vídeos</h2>
-        <video controls width="100%">
-            <source src="video.mp4" type="video/mp4">
-            Seu navegador não suporta a exibição de vídeos.
-        </video>
-    </section>
-
-    <section id="fotos" class="fotos">
-        <h2>Galeria de Fotos</h2>
-        <img src="foto1.jpg" alt="Foto 1" width="100%">
-        <img src="foto2.jpg" alt="Foto 2" width="100%">
-    </section>
-
-    <section id="eventos" class="eventos">
-        <h2>Próximos Eventos</h2>
-        <ul>
-            <li>Evento 1 - 12 de Setembro, 2024</li>
-            <li>Evento 2 - 25 de Outubro, 2024</li>
-            <li>Evento 3 - 8 de Novembro, 2024</li>
-        </ul>
-    </section>
-
-    <section id="loja" class="produtos">
-        <h2>Loja PPCMMC</h2>
-
-        <div class="produto">
-            <h3>Camisa PPCMMC</h3>
-            <img src="camisa.jpg" alt="Camisa PPCMMC">
-            <p>Preço: R$ 50,00</p>
-            <a href="https://wa.me/seunumero?text=Quero%20comprar%20a%20Camisa%20PPCMMC" class="comprar-btn">Comprar via WhatsApp</a>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>PPCMMC Portal do Cérebro Mortal</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#eventos">Calendário de Eventos</a></li>
+                <li><a href="#loja">Loja</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="produto">
-            <h3>Boné PPCMMC</h3>
-            <img src="bone.jpg" alt="Boné PPCMMC">
-            <p>Preço: R$ 30,00</p>
-            <a href="https://wa.me/seunumero?text=Quero%20comprar%20o%20Boné%20PPCMMC" class="comprar-btn">Comprar via WhatsApp</a>
+    <!-- Seção de Vídeos -->
+    <section id="videos">
+        <h2>Vídeos</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo 1"></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo 2"></iframe>
+            <!-- Adicione mais vídeos conforme necessário -->
         </div>
     </section>
-</div>
 
-<footer>
-    <p>&copy; 2024 PPCMMC - Portal do Cérebro Mortal</p>
-</footer>
+    <!-- Seção de Fotos -->
+    <section id="fotos">
+        <h2>Fotos</h2>
+        <div class="foto-grid">
+            <img src="img/foto1.jpg" alt="Foto 1">
+            <img src="img/foto2.jpg" alt="Foto 2">
+            <img src="img/foto3.jpg" alt="Foto 3">
+            <!-- Adicione mais fotos conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Seção de Eventos -->
+    <section id="eventos">
+        <h2>Calendário de Eventos</h2>
+        <div class="calendario">
+            <ul>
+                <li><strong>12 de Setembro:</strong> Encontro de Motociclistas</li>
+                <li><strong>25 de Setembro:</strong> Passeio noturno</li>
+                <li><strong>10 de Outubro:</strong> Festa de Aniversário do Clube</li>
+                <!-- Adicione mais eventos -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção de E-commerce -->
+    <section id="loja">
+        <h2>Loja</h2>
+        <div class="produto-grid">
+            <div class="produto">
+                <img src="img/camisa.jpg" alt="Camiseta PPCMMC">
+                <h3>Camiseta PPCMMC</h3>
+                <p>R$ 59,90</p>
+                <a href="https://wa.me/seunumero" target="_blank" class="botao-whatsapp">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto">
+                <img src="img/boné.jpg" alt="Boné PPCMMC">
+                <h3>Boné PPCMMC</h3>
+                <p>R$ 39,90</p>
+                <a href="https://wa.me/seunumero" target="_blank" class="botao-whatsapp">Comprar via WhatsApp</a>
+            </div>
+            <!-- Adicione mais produtos -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 PPCMMC Portal do Cérebro Mortal - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
