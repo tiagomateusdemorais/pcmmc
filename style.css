@@ -63,7 +63,7 @@ a.btn {
 
 /* Efeitos de transição de imagens de fundo */
 @keyframes backgroundSlideshow {
-    0% { background-image: url('membro1.jpg'); }
+    0% { background-image: url('pcemada.jpg'); }
     25% { background-image: url('membro2.jpg'); }
     50% { background-image: url('membro3.jpg'); }
     75% { background-image: url('membro4.jpg'); }
