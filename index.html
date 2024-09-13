@@ -3,84 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPCMMC Portal do Cérebro Mortal</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <title>PCM Moto Clube - Em Construção</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container do vídeo de fundo */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Conteúdo sobre o vídeo */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .content .btn {
+            padding: 15px 30px;
+            background-color: #f9a825;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .content .btn:hover {
+            background-color: #fff;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 36px;
+            }
+
+            .content p {
+                font-size: 16px;
+            }
+
+            .content .btn {
+                padding: 10px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <h1>PPCMMC Portal do Cérebro Mortal</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#videos">Vídeos</a></li>
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="#eventos">Calendário de Eventos</a></li>
-                <li><a href="#loja">Loja</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Vídeo de fundo -->
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="seu-video.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
+    </div>
 
-    <!-- Seção de Vídeos -->
-    <section id="videos">
-        <h2>Vídeos</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/FCpTruKuR9w" title="Vídeo 1"></iframe>
-            <iframe src="https://www.youtube.com/embed/FCpTruKuR9w" title="Vídeo 2"></iframe>
-            <!-- Adicione mais vídeos conforme necessário -->
-        </div>
-    </section>
-
-    <!-- Seção de Fotos -->
-    <section id="fotos">
-        <h2>Fotos</h2>
-        <div class="foto-grid">
-            <img src="img/foto1.jpg" alt="Foto 1">
-            <img src="img/foto2.jpg" alt="Foto 2">
-            <img src="img/foto3.jpg" alt="Foto 3">
-            <!-- Adicione mais fotos conforme necessário -->
-        </div>
-    </section>
-
-    <!-- Seção de Eventos -->
-    <section id="eventos">
-        <h2>Calendário de Eventos</h2>
-        <div class="calendario">
-            <ul>
-                <li><strong>12 de Setembro:</strong> Encontro de Motociclistas</li>
-                <li><strong>25 de Setembro:</strong> Passeio noturno</li>
-                <li><strong>10 de Outubro:</strong> Festa de Aniversário do Clube</li>
-                <!-- Adicione mais eventos -->
-            </ul>
-        </div>
-    </section>
-
-    <!-- Seção de E-commerce -->
-    <section id="loja">
-        <h2>Loja</h2>
-        <div class="produto-grid">
-            <div class="produto">
-                <img src="img/camisa.jpg" alt="Camiseta PPCMMC">
-                <h3>Camiseta PPCMMC</h3>
-                <p>R$ 59,90</p>
-                <a href="https://wa.me/seunumero" target="_blank" class="botao-whatsapp">Comprar via WhatsApp</a>
-            </div>
-            <div class="produto">
-                <img src="img/boné.jpg" alt="Boné PPCMMC">
-                <h3>Boné PPCMMC</h3>
-                <p>R$ 39,90</p>
-                <a href="https://wa.me/seunumero" target="_blank" class="botao-whatsapp">Comprar via WhatsApp</a>
-            </div>
-            <!-- Adicione mais produtos -->
-        </div>
-    </section>
+    <!-- Conteúdo da página -->
+    <div class="content">
+        <h1>PCM Moto Clube</h1>
+        <p>Estamos trabalhando em algo incrível! Volte em breve.</p>
+        <a href="mailto:contato@pcmmotoclube.com" class="btn">Entre em Contato</a>
+    </div>
 
     <!-- Rodapé -->
     <footer>
-        <p>© 2024 PPCMMC Portal do Cérebro Mortal - Todos os direitos reservados.</p>
+        &copy; 2024 PCM Moto Clube. Todos os direitos reservados.
     </footer>
 
 </body>
