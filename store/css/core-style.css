@@ -240,7 +240,9 @@ img {
     color: #ffffff;
     background-color: #ad0034; }
 
-
+.single_catagory_area:hover .catagory-content a {
+      color: #e42d29 !important;
+  }
   .single_catagory_area .catagory-content a:hover {
     color: #dd0245 !important;
     transition: .5s;}
